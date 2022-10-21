@@ -293,7 +293,19 @@ h6 {
 
 /*Portfolio*/
 
+.filter{
+  display: flex;
+  justify-content:center;
+}
+
+.filter .item:not(:last-child){
+  margin-right: 8px;
+}
+
 .filter-button {
+  padding: 6px 25px;
+  border-radius: 4px;
+
   cursor: pointer;
 
   background-color: var(--bgcolor-secondary);
@@ -313,6 +325,15 @@ h6 {
   background-color: var(--brand-color-accent);
 }
 
+/* Gallery */
+
+.gallery{
+  margin-top: 34px;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 30px;
+}
+
 .gallery .title {
   font-weight: 700;
   font-size: 18px;
@@ -321,7 +342,12 @@ h6 {
 }
 
 .gallery-caption {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--text-color-secondary);
+}
+
+.gallery .item{
+  margin: 20px 24px;
 }
