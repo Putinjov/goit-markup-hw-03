@@ -41,13 +41,12 @@ h6 {
   padding-right: 15px;
   margin: 0 auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* page header */
 .page-header {
   display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #ECECEC;;
 }
 
@@ -76,7 +75,9 @@ h6 {
 /*menu-nav*/
 
 .site-nav {
+  
   display: flex;
+  
 
   font-weight: 500;
   font-size: 14px;
@@ -88,7 +89,12 @@ h6 {
   margin-right: 50px;
 }
 
+.site-nav .item:first-child{
+  margin-left: 93px;
+}
+
 .site-nav .link {
+  
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -113,6 +119,10 @@ h6 {
 
 .contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.contacts .item:first-child{
+  margin-left: 344px;
 }
 
 .contacts .link {
