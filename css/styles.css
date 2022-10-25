@@ -211,11 +211,13 @@ h6 {
 
 .features {
   display: flex;
+  gap: 30px;
+  flex-basis: calc((100%-3*(gap))/4);
 }
 
-.features .item:not(:last-child) {
-  margin-right: 30px;
-}
+/* .features .item:nth-child(4n) {
+  margin-right: 0;
+} */
 
 .features-title {
   font-weight: 700;
@@ -248,12 +250,14 @@ h6 {
 
 .team {
   display: flex;
+  gap: 30px;
+  flex-basis: calc((100%-3*(gap))/4);
   background-color: var(--bgcolor-secondary);
 }
 
-.team .cards:not(:last-child) {
-  margin-right: 20px;
-}
+/* .team .cards:nth-child(4n){
+  margin-right: 0;
+} */
 
 .cards {
   background-color: var(--bgcolor-primary);
@@ -309,7 +313,7 @@ h6 {
 /*Portfolio*/
 
 .filter {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -347,9 +351,11 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  flex-basis: calc((100%-60px)/3);
 }
 
 .gallery .title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -357,19 +363,14 @@ h6 {
 }
 
 .gallery-caption {
-  margin-top: 8px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--text-color-secondary);
 }
 
-.gallery .item {
-  flex-basis: calc((100% - 60px) / 3);
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
-
 .gallery .text {
-  margin: 20px 24px;
+  padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
 }
