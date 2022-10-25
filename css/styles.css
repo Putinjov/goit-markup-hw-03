@@ -5,6 +5,7 @@
   --brand-color-bg: #2f303a;
   --bgcolor-primary: #ffffff;
   --bgcolor-secondary: #f5f4fa;
+  --gap: 30px;
 }
 
 body {
@@ -211,12 +212,11 @@ h6 {
 
 .features {
   display: flex;
-  gap: 30px;
-  
+  gap: var(--gap);
 }
 
-.features.item{
-  flex-basis: calc((100%-3*(30))/4);
+.features .item{
+  flex-basis: calc((100% - (3 * var(--gap)))/4)
 }
 /* .features .item:nth-child(4n) {
   margin-right: 0;
@@ -253,7 +253,7 @@ h6 {
 
 .team {
   display: flex;
-  gap: 30px;
+  gap: var(--gap);
   
   background-color: var(--bgcolor-secondary);
 }
@@ -262,8 +262,8 @@ h6 {
   margin-right: 0;
 } */
 
-.team.cards{
-flex-basis: calc((100%-3*30px)/4);
+.team .cards{
+flex-basis: calc((100% - (3 * var(--gap)))/4);
 }
 
 .cards {
@@ -357,7 +357,7 @@ flex-basis: calc((100%-3*30px)/4);
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
   
 }
 
@@ -382,6 +382,6 @@ flex-basis: calc((100%-3*30px)/4);
       border-bottom: 1px solid #eeeeee;
 }
 
-.gallery.item{
-  flex-basis: calc((100%-2*30px/3));
+.gallery .item{
+  flex-basis: calc((100% - (2 * var(--gap))) / 3);
 }
